@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_select_schedule"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:showAsAction="always"
+    tools:context="com.barcode.com.learnquran.SelectSchedule"
+    android:background="@drawable/bgg">
+
+
+    <TextView
+        android:text="Holy Quran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/top1eng"
+        android:textColor="#30471f"
+        android:textSize="30sp"
+        tools:text="Holy Quran"
+        android:textAlignment="center"
+
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:text="Memorization Interactive Schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/top2eng"
+        android:textColor="#30471f"
+        android:textSize="26sp"
+        tools:text="Memorization Interactive Schedule"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        android:layout_alignBaseline="@+id/top2arb"
+        android:layout_alignBottom="@+id/top2arb"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text=" الجدول التفاعلي لحفظ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/top1arb"
+        android:textColor="#30471f"
+        android:textSize="30sp"
+        tools:text=" الجدول التفاعلي لحفظ"
+        android:textAlignment="center"
+        android:layout_alignBaseline="@+id/top1eng"
+        android:layout_alignBottom="@+id/top1eng"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:text="القرآن الكريم"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/top2arb"
+        android:textColor="#30471f"
+        android:textSize="30sp"
+        tools:text="القرآن الكريم"
+        android:textAlignment="center"
+        android:layout_below="@+id/top1eng"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:text="I want to memorize the Holy Quran in:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mid1eng"
+        android:textColor="#30471f"
+        android:textSize="18sp"
+        tools:text="I want to memorize the Holy Quran in:"
+        android:textAlignment="center"
+        android:layout_above="@+id/spinnerCustom"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="109dp"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:text="(Select a schedule from the below)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mid2eng"
+        android:textColor="#30471f"
+        android:textSize="16sp"
+        tools:text="(Select a schedule from the below)"
+        android:textAlignment="center"
+        android:layout_alignBottom="@+id/mid2arb"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:text="أريد حفظ القرآن الكريم في:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mid1arb"
+        android:textColor="#30471f"
+        android:textSize="20sp"
+        tools:text="أريد حفظ القرآن الكريم في:"
+        android:textAlignment="center"
+        android:layout_alignBaseline="@+id/mid1eng"
+        android:layout_alignBottom="@+id/mid1eng"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:text="إخترأحد الجداول التالية"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mid2arb"
+        android:textColor="#30471f"
+        android:textSize="20sp"
+        tools:text="إخترأحد الجداول التالية"
+        android:textAlignment="center"
+        android:layout_below="@+id/mid1arb"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"/>
+
+    <Spinner
+        android:id="@+id/spinnerCustom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="142dp"
+        android:background="@drawable/custom_spinner_background"
+        android:gravity="center"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/ng"
+        android:id="@+id/gotosch2"
+        android:visibility="invisible"
+        android:layout_below="@+id/mid1eng"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="60dp" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/gotoscharb"
+        android:id="@+id/gotosch1"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/gotosch2"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/chnglangarb"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/changlangarb"
+        android:layout_alignTop="@+id/chnglangeng"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/chnglangeng"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/changlangeng"
+        android:layout_alignTop="@+id/gotosch2"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
